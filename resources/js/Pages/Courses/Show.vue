@@ -53,6 +53,7 @@
         <div class="my-10 px-8 mb-6 md:mb-0">
             <h2 class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2 border-t-2 border-indigo-100 py-8">{{courseShow.comments.length}} Comment<span v-if="courseShow.comments.length>1">s</span></h2>
             <div>
+                
                 <ul v-for="comment in comments" :key="comment.id">
                     <li v-if="comment.episode_id === courseShow.episodes[corruntKey].id" class="mt-3 flex justify-between items-center px-3 py-3">
                         <div>
@@ -66,6 +67,7 @@
                         </span>   
                     </li>
                 </ul>
+                
             </div>
             <!--COMMENT COMPONENT-->
             <!--you will find this component in the hlpers folder-->

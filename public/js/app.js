@@ -4583,7 +4583,6 @@ __webpack_require__.r(__webpack_exports__);
   props: ['courses', 'categories'],
   data: function data() {
     return {
-      courseList: this.courses,
       question: '',
       index: null,
       category: '',
@@ -4612,7 +4611,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       if (this.category) {
-        return this.courseList.data.filter(function (course) {
+        return this.courses.data.filter(function (course) {
           if (course.category !== null) {
             return course.category.title.toLowerCase().includes(_this.category.toLowerCase());
           }
@@ -4620,7 +4619,7 @@ __webpack_require__.r(__webpack_exports__);
       } //also if the user type something in the search bar,return the results.
 
 
-      return this.courseList.data.filter(function (course) {
+      return this.courses.data.filter(function (course) {
         return course.title.toLowerCase().includes(_this.question.toLowerCase());
       });
     }
@@ -4644,6 +4643,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Helpers_Comment_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Helpers/Comment.vue */ "./resources/js/Pages/Courses/Helpers/Comment.vue");
 /* harmony import */ var _Helpers_DeleteButton_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Helpers/DeleteButton.vue */ "./resources/js/Pages/Courses/Helpers/DeleteButton.vue");
 /* harmony import */ var _Helpers_Vote_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Helpers/Vote.vue */ "./resources/js/Pages/Courses/Helpers/Vote.vue");
+//
+//
 //
 //
 //
@@ -70954,8 +70955,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\formation-online\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\formation-online\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\xampp\htdocs\formation-online-v2\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\formation-online-v2\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })

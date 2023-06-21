@@ -41,7 +41,7 @@ class EmailController extends Controller
     }
 
 
-    //NOW IF THE USER IS ADMIN PRING ALL EMAIL SO THE ADMIN CAN READ THEM.
+    //NOW IF THE USER IS ADMIN PRINGs ALL EMAIL SO THE ADMIN CAN READ THEM.
     public function getEmails()
     {
         if(auth()->user()->is_admin)

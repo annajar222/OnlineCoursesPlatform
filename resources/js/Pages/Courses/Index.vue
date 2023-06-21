@@ -87,7 +87,6 @@ export default {
     props: ['courses','categories'],
     data(){
         return{
-            courseList : this.courses,
             question : '',
             index: null,
             category: '',
@@ -113,7 +112,7 @@ export default {
         getFilterCourses(){
             if(this.category)
             {
-                return this.courseList.data.filter( course => {
+                return this.courses.data.filter( course => {
                   if(course.category !== null)
                   {
                       return course.category.title.toLowerCase().includes(this.category.toLowerCase());
@@ -121,15 +120,11 @@ export default {
                 });
             }
             //also if the user type something in the search bar,return the results.
-            return this.courseList.data.filter( course => {
+            return this.courses.data.filter( course => {
                 return course.title.toLowerCase().includes(this.question.toLowerCase());
             });     
         }
     },
 }
 </script>
-
-<style scoped>
-
-</style>
 
