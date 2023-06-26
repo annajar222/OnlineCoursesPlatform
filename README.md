@@ -37,7 +37,7 @@ git clone [repository-url]
 
 For any questions or inquiries, please feel free to reach out to us:
 
-- Email: [your-email-address]
-- GitHub: [your-github-username]
+- Email: annajarmohamed@yovista.com
+- GitHub: annajar222
 
 Thank you for your interest in JustDeamy!
